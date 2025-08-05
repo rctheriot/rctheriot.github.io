@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ryan Theriot</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="name">resume</h1>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </header>
+        
+        <div class="content">
+            <div class="resume-container">
+                <!-- Header -->
+                <div class="resume-header">
+                    <h2 class="resume-name">Ryan Theriot</h2>
+                    <div class="resume-contact">
+                        <span>ryancriot@gmail.com</span>
+                        <span>|</span>
+                        <span>Honolulu, HI</span>
+                        <span>|</span>
+                        <span>ryanctheriot.com</span>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="resume-section">
+                    <p class="resume-summary">
+                        Full-stack Software Engineer with expertise in developing collaborative web applications, 
+                        interactive data visualization platforms, and AI-driven tools (RAG, MCP). Experienced in 
+                        building VR applications and hybrid reality systems, with a focus on intuitive user 
+                        experiences and deploying scalable solutions.
+                    </p>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="resume-section">
+                    <h3 class="section-title">WORK EXPERIENCE</h3>
+                    
+                    <div class="resume-item">
+                        <div class="job-header">
+                            <h4 class="job-title">Software Engineer</h4>
+                            <div class="job-meta">
+                                <span class="company">Laboratory for Advanced Visualizations and Applications</span>
+                                <span class="location">Honolulu, HI</span>
+                                <span class="date">Jan 2020 – Present</span>
+                            </div>
+                        </div>
+                        <ul class="job-description">
+                            <li>Core developer on SAGE3, an open-source, NSF-funded collaborative visualization platform enabling users to share media, data, dashboards, and code across laptops, display walls, and meeting spaces. Contributed to architecture, feature development, and deployment, supporting asynchronous and real-time collaboration.</li>
+                            <li>Developed a 3D web application for visualizing CycloneDX Software Bill of Materials using JavaScript and Three.js, allowing users to explore component hierarchies, dependencies, and vulnerabilities interactively.</li>
+                            <li>Managed a student team developing VR simulations for the Hawaii State Energy Office with Unity and Oculus, visualizing solar and wind projects on Oahu to help stakeholders understand land-use impacts.</li>
+                            <li>Developer on DynaCOVE, a real-time data visualization streaming tool for web, VR, AR, and mobile devices, for rendering large datasets on underpowered hardware in partnership with Oceanit (SBIR project).</li>
+                            <li>Conducted lab tours and live demonstrations for VIPs, legislators, and academic partners while managing lab equipment, including large display walls, hybrid-reality environments, 3D printers, and technical supplies.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="job-header">
+                            <h4 class="job-title">Research Assistant</h4>
+                            <div class="job-meta">
+                                <span class="company">Laboratory for Advanced Visualizations and Applications</span>
+                                <span class="location">Honolulu, HI</span>
+                                <span class="date">2016 – Dec 2019</span>
+                            </div>
+                        </div>
+                        <ul class="job-description">
+                            <li>Developed HAVEN, an Angular/Firebase web application visualizing Hawaii's energy resource interdependencies for the Hawaii State Energy Office.</li>
+                            <li>Developed a virtual reality application for interacting with live satellite data on the HTC Vive using Unity3D, presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016.</li>
+                            <li>Core developer on Destiny, a hybrid reality environment with 32 OLED displays in a circular formation for immersive 3D visualization. Built Unity3D tools to manage camera perspectives and render stereoscopic scenes. Developed a GPU shader to mitigate crosstalk and enhance visual clarity.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="job-header">
+                            <h4 class="job-title">Avionics Electrical Technician</h4>
+                            <div class="job-meta">
+                                <span class="company">United States Coast Guard</span>
+                                <span class="location">Kapolei, HI</span>
+                                <span class="date">Jan 2007 – Jan 2013</span>
+                            </div>
+                        </div>
+                        <ul class="job-description">
+                            <li>Operated, inspected, and maintained avionics systems on HC-130 aircraft.</li>
+                            <li>Conducted search and rescue missions, performed in-flight navigation, and radio operations.</li>
+                            <li>Awarded the Commandant's Letter of Commendation for performance during a search and rescue operation, contributing to the successful rescue of stranded mariners.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h3 class="section-title">EDUCATION</h3>
+                    <div class="resume-item">
+                        <div class="job-header">
+                            <h4 class="job-title">Master of Science in Computer Science</h4>
+                            <div class="job-meta">
+                                <span class="company">University of Hawaii at Manoa</span>
+                                <span class="location">Honolulu, HI</span>
+                                <span class="date">Aug 2017 - Dec 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publications -->
+                <div class="resume-section">
+                    <h3 class="section-title">PUBLICATIONS</h3>
+                    <ul class="publications-list">
+                        <li><strong>Reflecting on the SAGE Team's 20-Year Research in Digital Collaboration Tools.</strong> (Co-Author) — Computing in Science & Engineering, 2023. DOI: 10.1109/MCSE.2023.3297753</li>
+                        <li><strong>Data in Context: Engaging Audiences with 3D Physical Geo-Visualization.</strong> (Co-Author) — CHI Conference, 2020. DOI: 10.1145/3334480.3382968</li>
+                        <li><strong>Destiny-Class CyberCANOE: Hybrid Reality Visualization Environment.</strong> (Co-Author) — Electronic Imaging, 2017. DOI: 10.2352/ISSN.2470-1173.2017.3.ERVR-093</li>
+                    </ul>
+                </div>
+
+                <!-- Skills & Interests -->
+                <div class="resume-section">
+                    <h3 class="section-title">SKILLS & INTERESTS</h3>
+                    <div class="skills-interests">
+                        <div class="skills-group">
+                            <strong>Technologies:</strong> JavaScript (React, Node.js), Python, Docker, Redis, AI (RAG, MCP), Three.js, Unity3D
+                        </div>
+                        <div class="skills-group">
+                            <strong>Skills:</strong> Full-stack Development, Human-Computer Interaction, Data Visualization, VR Applications, Hybrid Reality Environments, Equipment Management (Display Walls, Headsets, 3D Printers), Technical Demos
+                        </div>
+                        <div class="skills-group">
+                            <strong>Interests:</strong> Running; Gardening, Hiking, Cooking, Videogames
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html" class="menu-item">← back</a></li>
+                <li><a href="files/Theriot_Ryan_Resume.pdf" class="menu-item external" target="_blank" rel="noopener">Download PDF</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
