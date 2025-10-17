@@ -1,0 +1,199 @@
+[
+    {
+        "id": "sage3",
+        "title": "SAGE3",
+        "description": "Open-source, NSF-funded collaborative visualization platform enabling users to share media, data, dashboards, and code across laptops, display walls, and meeting spaces. Core developer contributing to architecture, features, and real-time collaboration.",
+        "tech": [
+            "React",
+            "Node.js",
+            "Redis",
+            "Ai"
+        ],
+        "links": [
+            {
+                "label": "Live Demo",
+                "url": "https://sage3.sagecommons.org"
+            },
+            {
+                "label": "View Code",
+                "url": "https://github.com/SAGE-3"
+            }
+        ],
+        "videos": [
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/YOUR_VIDEO_ID_1"
+            },
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/YOUR_VIDEO_ID_2"
+            }
+        ]
+    },
+    {
+        "id": "sbom-visualizer",
+        "title": "CycloneDX SBOM Visualizer",
+        "description": "3D web application for visualizing Software Bill of Materials, allowing users to interactively explore component hierarchies, dependencies, and vulnerabilities in a spatial environment.",
+        "tech": [
+            "JavaScript",
+            "Three.js",
+            "WebGL"
+        ],
+        "links": [
+            {
+                "label": "View Demo",
+                "url": "#"
+            }
+        ],
+        "videos": [
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            }
+        ]
+    },
+    {
+        "id": "destiny",
+        "title": "Destiny Class CyberCANOE",
+        "description": "3D web application for visualizing Software Bill of Materials, allowing users to interactively explore component hierarchies, dependencies, and vulnerabilities in a spatial environment.",
+        "tech": [
+            "JavaScript",
+            "Three.js",
+            "WebGL"
+        ],
+        "links": [
+            {
+                "label": "Paper",
+                "url": "https://www.mdpi.com/2079-9292/10/4/513"
+            }
+        ],
+        "videos": [
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/afdGKTBPxog"
+            }
+        ]
+    },
+    {
+        "id": "hawaii-energy",
+        "title": "Hawaii State Energy Office Projects",
+        "description": "VR simulations for the Hawaii State Energy Office visualizing solar and wind projects on Oahu. Managed student team development using Unity and Oculus to help stakeholders understand land-use impacts.",
+        "tech": [
+            "Unity3D",
+            "Oculus",
+            "C#",
+            "VR"
+        ],
+        "links": [
+            {
+                "label": "View Demo",
+                "url": "#"
+            }
+        ],
+        "videos": [
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/kBwBf2bYzsE"
+            },
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/5p3XoRPWZJ4"
+            }
+        ]
+    },
+    {
+        "id": "dynacove",
+        "title": "DynaCOVE",
+        "description": "Real-time data visualization streaming tool for web, VR, AR, and mobile devices. Designed for rendering large datasets on underpowered hardware in partnership with Oceanit (SBIR project).",
+        "tech": [
+            "JavaScript",
+            "WebRTC",
+            "VR/AR",
+            "Unity"
+        ],
+        "links": [
+            {
+                "label": "View Demo",
+                "url": "#"
+            }
+        ],
+        "videos": [
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            }
+        ]
+    },
+    {
+        "id": "haven",
+        "title": "HAVEN",
+        "description": "Angular/Firebase web application visualizing Hawaii's energy resource interdependencies for the Hawaii State Energy Office. Interactive data visualization platform for energy planning and analysis.",
+        "tech": [
+            "Angular",
+            "Firebase",
+            "TypeScript",
+            "D3.js"
+        ],
+        "links": [
+            {
+                "label": "View Demo",
+                "url": "#"
+            }
+        ],
+        "videos": [
+            {
+                "type": "mp4",
+                "url": "videos/haven-demo.mp4"
+            },
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            }
+        ]
+    },
+    {
+        "id": "star-wars",
+        "title": "Tatooine",
+        "description": "A hybrid reality environment simulating the planet Tatooine from the Star Wars franchise. Users explore a downed X-Wing fighter, use a light saber, and move objects with the force. This was develped using Unity3D and assets were borrowed from Star Wars Battlefront.",
+        "tech": [
+            "Unity3D",
+            "Hybrid Reality"
+        ],
+        "links": [
+            {
+                "label": "News Article",
+                "url": "https://www.hawaii.edu/news/2017/05/25/manoa-students-create-star-wars-simulation/"
+            }
+        ],
+        "videos": [
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/kuTaRwFCu4c"
+            }
+        ]
+    },
+    {
+        "id": "satellite-watch",
+        "title": "SatWatch",
+        "description": "A hybrid reality environment simulating the planet Tatooine from the Star Wars franchise. Users explore a downed X-Wing fighter, use a light saber, and move objects with the force. This was develped using Unity3D and assets were borrowed from Star Wars Battlefront.",
+        "tech": [
+            "Unity3D",
+            "Hybrid Reality",
+            "Virtual Reality"
+        ],
+        "links": [
+
+        ],
+        "videos": [
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/cSxbsmeaH2o"
+            },
+            {
+                "type": "youtube",
+                "url": "https://www.youtube.com/embed/8w6bvCJymcQ"
+            }
+            
+        ]
+    }
+]
