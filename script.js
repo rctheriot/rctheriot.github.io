@@ -15,16 +15,14 @@ class ThemeManager {
     }
 
     init() {
-        // Check for saved theme preference or default to system preference
+        // Check for saved theme preference or default to dark theme
         const savedTheme = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         
         if (savedTheme) {
             this.setTheme(savedTheme);
-        } else if (prefersDark) {
-            this.setTheme('dark');
         } else {
-            this.setTheme('light');
+            // Default to dark theme
+            this.setTheme('dark');
         }
 
         // Add event listeners for theme toggles (desktop and mobile)
