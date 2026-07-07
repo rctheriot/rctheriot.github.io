@@ -3,6 +3,19 @@ import type { Project } from '../types'
 // Each project points at an image under /public/images/projects/. Until a photo
 // is added there, the card shows a styled placeholder automatically.
 export const projects: Project[] = [
+    {
+    id: 'mesonet',
+    title: 'Hawaii Mesonet',
+    description:
+      'A mobile application of real-time environmental data from the Hawaii Climate Data Portal (HCDP) Mesonet network, a statewide system of sensor stations monitoring temperature, rainfall, wind, humidity, and soil conditions across the Hawaiian Islands. First project I used LLM agents for code.',
+    image: '/images/projects/mesonet.jpg',
+    tech: ['React', 'PWA'],
+    links: [
+      { label: 'Live Demo', url: 'https://hawaiimesonet.app' },
+      { label: 'View Code', url: 'https://github.com/rctheriot/mesonet-hawaii-mobile'}
+    ],
+    videos: [],
+  },
   {
     id: 'sage3',
     title: 'SAGE3',
@@ -11,20 +24,39 @@ export const projects: Project[] = [
     image: '/images/projects/sage3.jpg',
     tech: ['React', 'Node.js', 'Redis', 'AI'],
     links: [
-      { label: 'Live Demo', url: 'https://sage3.sagecommons.org' },
+      { label: 'Live Demo', url: 'https://sage3.manoa.hawaii.edu' },
       { label: 'View Code', url: 'https://github.com/SAGE-3' },
     ],
-    videos: [],
+    videos: [
+      { type:'youtube', url: 'https://www.youtube.com/embed/e-UA48-x5a0'}
+    ],
   },
   {
     id: 'sbom-visualizer',
     title: 'CycloneDX SBOM Visualizer',
     description:
       'Interactive 3D web tool for exploring CycloneDX Software Bills of Materials. Turns dense dependency and vulnerability data into a navigable spatial view so teams can spot supply-chain risks faster.',
-    image: '/images/projects/sbom-visualizer.jpg',
+    image: '/images/projects/sbom.jpg',
     tech: ['JavaScript', 'Three.js', 'WebGL'],
     links: [],
     videos: [],
+  },
+
+  {
+    id: 'hawaii-energy',
+    title: 'Hawaii State Energy Office Projects',
+    description:
+      'Multiple projects to support the Hawaii State Enegry Offices\'s goal of explaining Hawaii\'s energy needs and real land-use tradeoffs to legislators, students, and the general public. Consisted of three different projects, a web based analyitical tool, VR immerisve expereicen, and a 3D projection table.',
+    image: '/images/projects/hawaii-energy.jpg',
+    tech: ['Unity3D', 'Oculus', 'C#', 'VR'],
+    links: [
+      { label: 'News Article', url: 'https://www.hawaii.edu/news/2026/01/29/visualizing-energy-future/'}
+    ],
+    videos: [
+      { type: 'youtube', url: 'https://www.youtube.com/embed/PBeMcKDsoGc'},
+      { type: 'youtube', url: 'https://www.youtube.com/embed/5p3XoRPWZJ4' },
+      { type: 'youtube', url: 'https://www.youtube.com/embed/kBwBf2bYzsE' }
+    ],
   },
   {
     id: 'destiny',
@@ -37,44 +69,11 @@ export const projects: Project[] = [
     videos: [{ type: 'youtube', url: 'https://www.youtube.com/embed/afdGKTBPxog' }],
   },
   {
-    id: 'hawaii-energy',
-    title: 'Hawaii State Energy Office Projects',
-    description:
-      'VR simulations visualizing proposed solar and wind projects on Oahu for the Hawaii State Energy Office. Led a student team building Unity/Oculus experiences that helped stakeholders weigh real land-use tradeoffs.',
-    image: '/images/projects/hawaii-energy.jpg',
-    tech: ['Unity3D', 'Oculus', 'C#', 'VR'],
-    links: [],
-    videos: [
-      { type: 'youtube', url: 'https://www.youtube.com/embed/kBwBf2bYzsE' },
-      { type: 'youtube', url: 'https://www.youtube.com/embed/5p3XoRPWZJ4' },
-    ],
-  },
-  {
-    id: 'dynacove',
-    title: 'DynaCOVE',
-    description:
-      'Real-time streaming tool for rendering large datasets across web, VR, AR, and mobile. Built with Oceanit (SBIR) to push heavy visualizations onto underpowered hardware.',
-    image: '/images/projects/dynacove.jpg',
-    tech: ['JavaScript', 'WebRTC', 'VR/AR', 'Unity'],
-    links: [],
-    videos: [],
-  },
-  {
-    id: 'haven',
-    title: 'HAVEN',
-    description:
-      "Angular/Firebase web app mapping Hawaii's energy resource interdependencies for the State Energy Office. Gave planners an interactive view of how the islands' energy systems connect.",
-    image: '/images/projects/haven.jpg',
-    tech: ['Angular', 'Firebase', 'TypeScript', 'D3.js'],
-    links: [],
-    videos: [],
-  },
-  {
     id: 'star-wars',
     title: 'Tatooine',
     description:
-      'Hybrid reality Star Wars experience where users explore a downed X-Wing, wield a lightsaber, and move objects with the Force. A Unity3D showcase piece that drew press coverage and public demos.',
-    image: '/images/projects/star-wars.jpg',
+      'A Star Wars experience built for the Destiny-Class CyberCANOE where users explore a downed X-Wing, wield a lightsaber, and move objects with the Force. An experience that drew press coverage and public demos.',
+    image: '/images/projects/starwars.jpg',
     tech: ['Unity3D', 'Hybrid Reality'],
     links: [
       {
@@ -88,13 +87,13 @@ export const projects: Project[] = [
     id: 'satellite-watch',
     title: 'SatWatch',
     description:
-      'HTC Vive VR application for interacting with live satellite data, built in Unity3D. Presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016.',
-    image: '/images/projects/satellite-watch.jpg',
-    tech: ['Unity3D', 'Virtual Reality', 'HTC Vive'],
-    links: [],
+      'A VR application for interacting with live satellite data, built in Unity3D. Presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016. Project was also forked and used for CyberCOP project ',
+    image: '/images/projects/satwatch.jpg',
+    tech: ['Unity3D', 'Virtual Reality', 'VR'],
+    links: [{ label: 'CyberCop News Article', url: 'https://datascience.hawaii.edu/reality-bytes-the-dust-uh-manoa-students-conquer-national-hackathon/' }],
     videos: [
       { type: 'youtube', url: 'https://www.youtube.com/embed/cSxbsmeaH2o' },
-      { type: 'youtube', url: 'https://www.youtube.com/embed/8w6bvCJymcQ' },
+
     ],
   },
 ]
