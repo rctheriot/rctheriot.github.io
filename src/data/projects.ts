@@ -7,7 +7,7 @@ export const projects: Project[] = [
     id: 'mesonet',
     title: 'Hawaii Mesonet',
     description:
-      'A mobile application of real-time environmental data from the Hawaii Climate Data Portal (HCDP) Mesonet network, a statewide system of sensor stations monitoring temperature, rainfall, wind, humidity, and soil conditions across the Hawaiian Islands. First project I used LLM agents for code.',
+      'A mobile application of real-time environmental data from the Hawaii Climate Data Portal (HCDP) Mesonet network, a statewide system of sensor stations monitoring temperature, rainfall, wind, humidity, and soil conditions across the Hawaiian Islands. Provides the general public reliable sensor data from a federally funded station network.',
     image: '/images/projects/mesonet.jpg',
     tech: ['React', 'PWA'],
     links: [
@@ -46,8 +46,8 @@ export const projects: Project[] = [
     id: 'hawaii-energy',
     title: 'Hawaii State Energy Office Projects',
     description:
-      'Multiple projects to support the Hawaii State Enegry Offices\'s goal of explaining Hawaii\'s energy needs and real land-use tradeoffs to legislators, students, and the general public. Consisted of three different projects, a web based analyitical tool, VR immerisve expereicen, and a 3D projection table.',
-    image: '/images/projects/hawaii-energy.jpg',
+      'Multiple projects to support the Hawaii State Enegry Offices\'s goal of explaining Hawaii\'s energy needs and real land-use tradeoffs to legislators, students, and the general public. Consisted of three different projects; a web based analyitical tool, a VR immerisve experience, and a 3D projection table.',
+    image: '/images/projects/haven.jpg',
     tech: ['Unity3D', 'Oculus', 'C#', 'VR'],
     links: [
       { label: 'News Article', url: 'https://www.hawaii.edu/news/2026/01/29/visualizing-energy-future/'}
