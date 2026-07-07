@@ -1,20 +1,7 @@
 /* ==========================================================================
-   Theme tokens
+   Theme tokens (dark only)
    ========================================================================== */
 :root {
-  --bg: #ffffff;
-  --bg-elevated: #f7f8fa;
-  --bg-card: #ffffff;
-  --text: #14181f;
-  --text-muted: #5b6472;
-  --border: #e6e9ee;
-  --accent: #0d9488;
-  --accent-contrast: #ffffff;
-  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
-  --sidebar-width: 320px;
-}
-
-[data-theme='dark'] {
   --bg: #0d1117;
   --bg-elevated: #161b22;
   --bg-card: #161b22;
@@ -24,6 +11,8 @@
   --accent: #2dd4bf;
   --accent-contrast: #06231f;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
+  --sidebar-width: 320px;
+  color-scheme: dark;
 }
 
 * {
@@ -95,6 +84,24 @@ a {
   justify-content: space-between;
   gap: 2rem;
   overflow-y: auto;
+}
+
+.sidebar-header {
+  text-align: center;
+}
+
+.sidebar-avatar {
+  display: block;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.1rem;
+  /* Smooth accent gradient ring via the border, blended into the sidebar */
+  border: 3px solid transparent;
+  background: linear-gradient(var(--bg-elevated), var(--bg-elevated)) padding-box,
+    linear-gradient(150deg, var(--accent), rgba(45, 212, 191, 0.1)) border-box;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 .sidebar-name {
@@ -209,48 +216,6 @@ a {
   color: var(--accent-contrast);
 }
 
-.theme-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font: inherit;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  padding: 0;
-}
-
-.toggle-switch {
-  position: relative;
-  width: 40px;
-  height: 22px;
-  border-radius: 11px;
-  background-color: var(--border);
-  transition: background-color 0.25s ease;
-}
-
-.toggle-switch::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #fff;
-  transition: transform 0.25s ease;
-}
-
-.toggle-switch.on {
-  background-color: var(--accent);
-}
-
-.toggle-switch.on::after {
-  transform: translateX(18px);
-}
-
 /* ==========================================================================
    Project cards
    ========================================================================== */
@@ -263,11 +228,10 @@ a {
 .project-card {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
   background-color: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 1.5rem;
+  overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -275,6 +239,81 @@ a {
 .project-card:hover {
   transform: translateY(-3px);
   border-color: var(--accent);
+}
+
+/* Media banner */
+.project-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background-color: var(--bg-elevated);
+  overflow: hidden;
+}
+
+.project-media.clickable {
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-media.clickable:hover .project-image {
+  transform: scale(1.04);
+}
+
+.project-image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background: radial-gradient(circle at 30% 20%, rgba(45, 212, 191, 0.18), transparent 60%),
+    linear-gradient(135deg, var(--bg-elevated), var(--bg-card));
+}
+
+.project-image-placeholder span {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.project-play {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background-color: rgba(6, 35, 31, 0.78);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  backdrop-filter: blur(2px);
+  transition: background-color 0.2s ease;
+}
+
+.project-media.clickable:hover .project-play {
+  background-color: var(--accent);
+  color: var(--accent-contrast);
+}
+
+/* Content below the banner */
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding: 1.35rem 1.5rem 1.5rem;
+  flex: 1;
 }
 
 .project-body {
@@ -336,19 +375,8 @@ a {
   color: var(--accent);
 }
 
-.action-button.primary {
-  background-color: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-contrast);
-}
-
-.action-button.primary:hover {
-  filter: brightness(1.08);
-  color: var(--accent-contrast);
-}
-
 /* ==========================================================================
-   Résumé
+   Resume
    ========================================================================== */
 .resume {
   display: flex;

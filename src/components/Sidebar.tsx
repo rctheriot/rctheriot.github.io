@@ -1,11 +1,8 @@
 import { profile } from '../data/profile'
-import type { Theme } from '../useTheme'
 
 interface SidebarProps {
   activeSection: string
   onNavigate: (id: string) => void
-  theme: Theme
-  onToggleTheme: () => void
 }
 
 const sections = [
@@ -13,11 +10,12 @@ const sections = [
   { id: 'experience', label: 'Experience' },
 ]
 
-export function Sidebar({ activeSection, onNavigate, theme, onToggleTheme }: SidebarProps) {
+export function Sidebar({ activeSection, onNavigate }: SidebarProps) {
   return (
     <aside className="sidebar">
       <div className="sidebar-top">
         <header className="sidebar-header">
+          <img className="sidebar-avatar" src={profile.photo} alt={profile.name} width="128" height="128" />
           <h1 className="sidebar-name">{profile.name}</h1>
           <p className="sidebar-title">{profile.title}</p>
           <p className="sidebar-summary">{profile.summary}</p>
@@ -58,13 +56,8 @@ export function Sidebar({ activeSection, onNavigate, theme, onToggleTheme }: Sid
         </div>
 
         <a className="resume-button" href={profile.resumeUrl} target="_blank" rel="noopener noreferrer">
-          Download Résumé
+          Download Resume
         </a>
-
-        <button type="button" className="theme-toggle" onClick={onToggleTheme}>
-          <span>{theme === 'dark' ? 'Dark' : 'Light'} mode</span>
-          <span className={`toggle-switch${theme === 'dark' ? ' on' : ''}`} aria-hidden="true" />
-        </button>
       </div>
     </aside>
   )

@@ -5,10 +5,8 @@ import { Resume } from './components/Resume'
 import { VideoModal } from './components/VideoModal'
 import { projects } from './data/projects'
 import type { Project } from './types'
-import { useTheme } from './useTheme'
 
 export function App() {
-  const { theme, toggleTheme } = useTheme()
   const [activeVideos, setActiveVideos] = useState<Project | null>(null)
   const [activeSection, setActiveSection] = useState('projects')
 
@@ -39,12 +37,7 @@ export function App() {
 
   return (
     <div className="layout">
-      <Sidebar
-        activeSection={activeSection}
-        onNavigate={scrollTo}
-        theme={theme}
-        onToggleTheme={toggleTheme}
-      />
+      <Sidebar activeSection={activeSection} onNavigate={scrollTo} />
 
       <main className="content">
         <section id="projects" ref={projectsRef} className="section">

@@ -12,6 +12,8 @@ export interface Project {
   id: string
   title: string
   description: string
+  /** Showcase image, e.g. '/images/projects/sage3.jpg'. Falls back to a placeholder if missing. */
+  image?: string
   tech: string[]
   links: ProjectLink[]
   videos: ProjectVideo[]

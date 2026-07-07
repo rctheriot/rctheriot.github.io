@@ -1,14 +1,14 @@
 import type { Project } from '../types'
 
-// Video entries that were unfilled placeholders (YOUR_VIDEO_ID) or pointed at
-// assets that don't exist have been removed. Descriptions for Destiny and
-// SatWatch have been corrected using details from the resume.
+// Each project points at an image under /public/images/projects/. Until a photo
+// is added there, the card shows a styled placeholder automatically.
 export const projects: Project[] = [
   {
     id: 'sage3',
     title: 'SAGE3',
     description:
-      'Open-source, NSF-funded collaborative visualization platform enabling users to share media, data, dashboards, and code across laptops, display walls, and meeting spaces. Core developer contributing to architecture, features, and real-time collaboration.',
+      'Open-source, NSF-funded platform for real-time collaboration across laptops, display walls, and meeting rooms. As a core developer I helped shape its architecture and features into a tool used by research teams worldwide.',
+    image: '/images/projects/sage3.jpg',
     tech: ['React', 'Node.js', 'Redis', 'AI'],
     links: [
       { label: 'Live Demo', url: 'https://sage3.sagecommons.org' },
@@ -20,7 +20,8 @@ export const projects: Project[] = [
     id: 'sbom-visualizer',
     title: 'CycloneDX SBOM Visualizer',
     description:
-      'A 3D web application for visualizing Software Bill of Materials, allowing users to interactively explore component hierarchies, dependencies, and vulnerabilities in a spatial environment.',
+      'Interactive 3D web tool for exploring CycloneDX Software Bills of Materials. Turns dense dependency and vulnerability data into a navigable spatial view so teams can spot supply-chain risks faster.',
+    image: '/images/projects/sbom-visualizer.jpg',
     tech: ['JavaScript', 'Three.js', 'WebGL'],
     links: [],
     videos: [],
@@ -29,7 +30,8 @@ export const projects: Project[] = [
     id: 'destiny',
     title: 'Destiny-Class CyberCANOE',
     description:
-      'A hybrid reality environment with 32 OLED displays arranged in a circular formation for immersive 3D visualization. Built Unity3D tools to manage camera perspectives and render stereoscopic scenes, plus a GPU shader to mitigate crosstalk and enhance visual clarity.',
+      'Hybrid reality environment of 32 OLED displays arranged in a circle for immersive 3D visualization. Built the Unity3D camera tooling and a custom GPU shader that reduced crosstalk for noticeably sharper stereoscopic imagery.',
+    image: '/images/projects/destiny.jpg',
     tech: ['Unity3D', 'Hybrid Reality', 'GPU Shaders', 'C#'],
     links: [{ label: 'Paper', url: 'https://www.mdpi.com/2079-9292/10/4/513' }],
     videos: [{ type: 'youtube', url: 'https://www.youtube.com/embed/afdGKTBPxog' }],
@@ -38,7 +40,8 @@ export const projects: Project[] = [
     id: 'hawaii-energy',
     title: 'Hawaii State Energy Office Projects',
     description:
-      'VR simulations for the Hawaii State Energy Office visualizing solar and wind projects on Oahu. Managed a student team building Unity and Oculus experiences to help stakeholders understand land-use impacts.',
+      'VR simulations visualizing proposed solar and wind projects on Oahu for the Hawaii State Energy Office. Led a student team building Unity/Oculus experiences that helped stakeholders weigh real land-use tradeoffs.',
+    image: '/images/projects/hawaii-energy.jpg',
     tech: ['Unity3D', 'Oculus', 'C#', 'VR'],
     links: [],
     videos: [
@@ -50,7 +53,8 @@ export const projects: Project[] = [
     id: 'dynacove',
     title: 'DynaCOVE',
     description:
-      'Real-time data visualization streaming tool for web, VR, AR, and mobile devices. Designed for rendering large datasets on underpowered hardware in partnership with Oceanit (SBIR project).',
+      'Real-time streaming tool for rendering large datasets across web, VR, AR, and mobile. Built with Oceanit (SBIR) to push heavy visualizations onto underpowered hardware.',
+    image: '/images/projects/dynacove.jpg',
     tech: ['JavaScript', 'WebRTC', 'VR/AR', 'Unity'],
     links: [],
     videos: [],
@@ -59,7 +63,8 @@ export const projects: Project[] = [
     id: 'haven',
     title: 'HAVEN',
     description:
-      "Angular/Firebase web application visualizing Hawaii's energy resource interdependencies for the Hawaii State Energy Office. An interactive data visualization platform for energy planning and analysis.",
+      "Angular/Firebase web app mapping Hawaii's energy resource interdependencies for the State Energy Office. Gave planners an interactive view of how the islands' energy systems connect.",
+    image: '/images/projects/haven.jpg',
     tech: ['Angular', 'Firebase', 'TypeScript', 'D3.js'],
     links: [],
     videos: [],
@@ -68,7 +73,8 @@ export const projects: Project[] = [
     id: 'star-wars',
     title: 'Tatooine',
     description:
-      'A hybrid reality environment simulating the planet Tatooine from Star Wars. Users explore a downed X-Wing fighter, wield a lightsaber, and move objects with the Force. Built in Unity3D with assets borrowed from Star Wars Battlefront.',
+      'Hybrid reality Star Wars experience where users explore a downed X-Wing, wield a lightsaber, and move objects with the Force. A Unity3D showcase piece that drew press coverage and public demos.',
+    image: '/images/projects/star-wars.jpg',
     tech: ['Unity3D', 'Hybrid Reality'],
     links: [
       {
@@ -82,7 +88,8 @@ export const projects: Project[] = [
     id: 'satellite-watch',
     title: 'SatWatch',
     description:
-      'A virtual reality application for interacting with live satellite data on the HTC Vive, built in Unity3D. Presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016.',
+      'HTC Vive VR application for interacting with live satellite data, built in Unity3D. Presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016.',
+    image: '/images/projects/satellite-watch.jpg',
     tech: ['Unity3D', 'Virtual Reality', 'HTC Vive'],
     links: [],
     videos: [
