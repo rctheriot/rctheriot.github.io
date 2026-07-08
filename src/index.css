@@ -2,12 +2,12 @@
    Theme tokens (dark only)
    ========================================================================== */
 :root {
-  --bg: #0d1117;
-  --bg-elevated: #161b22;
-  --bg-card: #161b22;
+  --bg: #0d0d0f;
+  --bg-elevated: #151517;
+  --bg-card: #151517;
   --text: #e9edf2;
-  --text-muted: #9aa4b2;
-  --border: #242b35;
+  --text-muted: #9a9aa2;
+  --border: #212124;
   --accent: #2bd4bd;
   --accent-contrast: #06231f;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
@@ -59,7 +59,7 @@ a {
 }
 
 .section-title {
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -607,7 +607,7 @@ a {
 }
 
 /* ==========================================================================
-   Responsive — sidebar collapses to top header
+   Responsive: sidebar collapses to top header
    ========================================================================== */
 @media (max-width: 900px) {
   .layout {

@@ -7,11 +7,11 @@ export const experience: ResumeJob[] = [
     location: 'Honolulu, HI',
     date: 'Jan 2020 – Present',
     bullets: [
-      'Core developer on SAGE3, an open-source, NSF-funded collaborative visualization platform enabling users to share media, data, dashboards, and code across laptops, display walls, and meeting spaces. Contributed to architecture, feature development, and deployment, supporting asynchronous and real-time collaboration.',
-      'Developed a 3D web application for visualizing CycloneDX Software Bill of Materials using JavaScript and Three.js, allowing users to explore component hierarchies, dependencies, and vulnerabilities interactively.',
-      'Managed a student team developing VR simulations for the Hawaii State Energy Office with Unity and Oculus, visualizing solar and wind projects on Oahu to help stakeholders understand land-use impacts.',
-      'Developer on DynaCOVE, a real-time data visualization streaming tool for web, VR, AR, and mobile devices, for rendering large datasets on underpowered hardware in partnership with Oceanit (SBIR project).',
-      'Conducted lab tours and live demonstrations for VIPs, legislators, and academic partners while managing lab equipment, including large display walls, hybrid-reality environments, 3D printers, and technical supplies.',
+      'Core developer on SAGE3, an open-source, NSF-funded platform that lets research teams share media, data, dashboards, and code across laptops, display walls, and meeting rooms, shaping the architecture and features into a tool used by research groups worldwide, whether they\'re collaborating live or asynchronously.',
+      'Built the Hawaii Mesonet mobile app, giving the public reliable, real-time access to statewide environmental sensor data (temperature, rainfall, wind, humidity, and soil conditions) from a federally funded network of stations across the islands.',
+      'Developed an interactive 3D tool for exploring CycloneDX Software Bills of Materials, turning dense dependency and vulnerability data into a navigable spatial view so teams can spot supply-chain risks faster.',
+      'Led a student team building VR simulations of solar and wind projects on Oahu for the Hawaii State Energy Office, helping legislators and stakeholders see real land-use tradeoffs before they made decisions.',
+      'Hosted lab tours and live demonstrations for VIPs, legislators, and academic partners, while managing lab equipment including large display walls, hybrid-reality environments, and 3D printers.',
     ],
   },
   {
@@ -20,9 +20,10 @@ export const experience: ResumeJob[] = [
     location: 'Honolulu, HI',
     date: '2016 – Dec 2019',
     bullets: [
-      "Developed HAVEN, an Angular/Firebase web application visualizing Hawaii's energy resource interdependencies for the Hawaii State Energy Office.",
-      'Developed a virtual reality application for interacting with live satellite data on the HTC Vive using Unity3D, presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016.',
-      'Core developer on Destiny, a hybrid reality environment with 32 OLED displays in a circular formation for immersive 3D visualization. Built Unity3D tools to manage camera perspectives and render stereoscopic scenes. Developed a GPU shader to mitigate crosstalk and enhance visual clarity.',
+      "Built HAVEN, an Angular/Firebase web app that helped the Hawaii State Energy Office turn Hawaii's tangled energy resource interdependencies into something legislators and the public could actually explore and understand.",
+      'Built a VR application for exploring live satellite data on the HTC Vive with Unity3D, presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016 and later forked for the CyberCOP project.',
+      'Core developer on Destiny, a hybrid-reality environment of 32 OLED displays arranged in a circle for immersive 3D visualization. Built the Unity3D camera tooling researchers relied on and a custom GPU shader that cut crosstalk for noticeably sharper stereoscopic imagery.',
+      'Built Tatooine, a Star Wars experience for the Destiny-Class CyberCANOE letting visitors explore a downed X-Wing, wield a lightsaber, and move objects with the Force, an experience that drew press coverage and public demos.',
     ],
   },
   {
