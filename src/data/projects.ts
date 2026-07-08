@@ -46,7 +46,7 @@ export const projects: Project[] = [
     id: 'hawaii-energy',
     title: 'Hawaii State Energy Office Projects',
     description:
-      'Multiple projects to support the Hawaii State Enegry Offices\'s goal of explaining Hawaii\'s energy needs and real land-use tradeoffs to legislators, students, and the general public. Consisted of three different projects; a web based analyitical tool, a VR immerisve experience, and a 3D projection table.',
+      "Multiple projects to support the Hawaii State Energy Office's goal of explaining Hawaii's energy needs and real land-use tradeoffs to legislators, students, and the general public. Consisted of three different projects: a web-based analytical tool, a VR immersive experience, and a 3D projection table.",
     image: '/images/projects/haven.jpg',
     tech: ['Unity3D', 'Oculus', 'C#', 'VR'],
     links: [
@@ -87,10 +87,10 @@ export const projects: Project[] = [
     id: 'satellite-watch',
     title: 'SatWatch',
     description:
-      'A VR application for interacting with live satellite data, built in Unity3D. Presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016. Project was also forked and used for CyberCOP project ',
+      'A VR application for interacting with live satellite data, built in Unity3D. Presented at the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS) in 2016. The project was later forked and used for the CyberCOP project.',
     image: '/images/projects/satwatch.jpg',
     tech: ['Unity3D', 'Virtual Reality', 'VR'],
-    links: [{ label: 'CyberCop News Article', url: 'https://datascience.hawaii.edu/reality-bytes-the-dust-uh-manoa-students-conquer-national-hackathon/' }],
+    links: [{ label: 'CyberCOP News Article', url: 'https://datascience.hawaii.edu/reality-bytes-the-dust-uh-manoa-students-conquer-national-hackathon/' }],
     videos: [
       { type: 'youtube', url: 'https://www.youtube.com/embed/cSxbsmeaH2o' },
 
